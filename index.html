@@ -3,22 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vídeo Exclusivo</title>
+    <title>Vídeo Exclusivo - Engenheiro</title>
     
-    <!-- TAGS OPEN GRAPH PARA VÍDEO (Compatível com Facebook e redes sociais que aceitam player inline) -->
-    <meta property="og:title" content="Acesse o Conteúdo em Vídeo Exclusivo">
-    <meta property="og:description" content="Clique para assistir ao vídeo completo em alta definição.">
-    
-    <!-- Imagem de Capa (Thumbnail obrigatória para carregamento inicial e fallback) -->
-    <meta property="og:image" content="https://raw.githubusercontent.com/pradodalapa-hue/fotos-industrial/main/img/jdp_1790472078751_1001572650.jpg">
-    
-    <!-- Tags de Vídeo Open Graph -->
-    <meta property="og:video" content="https://raw.githubusercontent.com/pradodalapa-hue/fotos-industrial/main/media/jdp_1790805480352_2026-02-12T20-55-09_a_quero_que_você_watermarked(1).mp4">
-    <meta property="og:video:secure_url" content="https://raw.githubusercontent.com/pradodalapa-hue/fotos-industrial/main/media/jdp_1790805480352_2026-02-12T20-55-09_a_quero_que_você_watermarked(1).mp4">
-    <meta property="og:video:type" content="video/mp4">
-    <meta property="og:video:width" content="1280">
-    <meta property="og:video:height" content="720">
-    <meta property="og:type" content="video.other">
+    <!-- Open Graph para Redes Sociais -->
+    <meta property="og:title" content="Transmissão Exclusiva em Vídeo">
+    <meta property="og:description" content="Clique para assistir ao conteúdo completo em alta definição.">
+    <meta property="og:image" content="https://img.youtube.com/vi/CDdvxI_enVU/hqdefault.jpg">
+    <meta property="og:type" content="website">
 
     <style>
         :root {
@@ -43,7 +34,7 @@
         }
         .container {
             width: 100%;
-            max-width: 600px;
+            max-width: 420px;
             background: var(--card-bg);
             border: 2px solid var(--gold-color);
             border-radius: 12px;
@@ -52,28 +43,29 @@
             box-shadow: 0 0 25px rgba(212, 175, 55, 0.3);
         }
         h1 {
-            font-size: 1.4rem;
+            font-size: 1.3rem;
             margin-bottom: 15px;
             text-transform: uppercase;
             letter-spacing: 1px;
+            color: var(--gold-color);
         }
         .video-wrapper {
             position: relative;
             width: 100%;
-            padding-top: 56.25%; /* Proporção 16:9 */
+            padding-top: 177.77%; /* Proporção 9:16 otimizada para Shorts */
             background: #111;
             border-radius: 8px;
             overflow: hidden;
             border: 1px solid var(--gold-color);
             margin-bottom: 20px;
         }
-        video {
+        iframe {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            object-fit: cover;
+            border: none;
         }
         .btn {
             display: inline-block;
@@ -84,7 +76,6 @@
             font-weight: bold;
             text-decoration: none;
             border-radius: 6px;
-            transition: opacity 0.2s;
             cursor: pointer;
             border: none;
             text-transform: uppercase;
@@ -100,16 +91,12 @@
     <h1>Transmissão Exclusiva</h1>
     
     <div class="video-wrapper">
-        <!-- Substitua o link abaixo pela URL direta do seu vídeo em formato .mp4 -->
-        <video controls autoplay muted playsinline poster="https://raw.githubusercontent.com/pradodalapa-hue/fotos-industrial/main/img/jdp_1790472078751_1001572650.jpg">
-            <source src="https://raw.githubusercontent.com/pradodalapa-hue/fotos-industrial/main/media/jdp_1790805480352_2026-02-12T20-55-09_a_quero_que_você_watermarked(1).mp4" type="video/mp4">
-            Seu navegador não suporta a reprodução de vídeo.
-        </video>
+        <iframe src="https://www.youtube.com/embed/CDdvxI_enVU" title="YouTube Short" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
 
-    <p style="font-size: 0.85rem; color: #aaa; margin-bottom: 15px;">Assista ao conteúdo completo acima ou acesse o link oficial.</p>
+    <p style="font-size: 0.85rem; color: var(--gold-color); margin-bottom: 15px; opacity: 0.8;">Assista ao conteúdo completo acima.</p>
     
-    <a href="https://www.google.com" class="btn" target="_blank">Acessar Página Oficial</a>
+    <a href="https://youtube.com/shorts/CDdvxI_enVU?is=bL6UjDOmOA_VpoOb" class="btn" target="_blank">Assistir no YouTube</a>
 </div>
 
 </body>
