@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeo Exclusivo</title>
+    
+    <!-- TAGS OPEN GRAPH PARA VÍDEO (Compatível com Facebook e redes sociais que aceitam player inline) -->
+    <meta property="og:title" content="Acesse o Conteúdo em Vídeo Exclusivo">
+    <meta property="og:description" content="Clique para assistir ao vídeo completo em alta definição.">
+    
+    <!-- Imagem de Capa (Thumbnail obrigatória para carregamento inicial e fallback) -->
+    <meta property="og:image" content="https://raw.githubusercontent.com/pradodalapa-hue/fotos-industrial/main/img/jdp_1790472078751_1001572650.jpg">
+    
+    <!-- Tags de Vídeo Open Graph -->
+    <meta property="og:video" content="https://raw.githubusercontent.com/pradodalapa-hue/fotos-industrial/main/media/jdp_1790805480352_2026-02-12T20-55-09_a_quero_que_você_watermarked(1).mp4">
+    <meta property="og:video:secure_url" content="https://raw.githubusercontent.com/pradodalapa-hue/fotos-industrial/main/media/jdp_1790805480352_2026-02-12T20-55-09_a_quero_que_você_watermarked(1).mp4">
+    <meta property="og:video:type" content="video/mp4">
+    <meta property="og:video:width" content="1280">
+    <meta property="og:video:height" content="720">
+    <meta property="og:type" content="video.other">
+
+    <style>
+        :root {
+            --bg-color: #000000;
+            --gold-color: #D4AF37;
+            --card-bg: #0f0f0f;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--gold-color);
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            width: 100%;
+            max-width: 600px;
+            background: var(--card-bg);
+            border: 2px solid var(--gold-color);
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 0 25px rgba(212, 175, 55, 0.3);
+        }
+        h1 {
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .video-wrapper {
+            position: relative;
+            width: 100%;
+            padding-top: 56.25%; /* Proporção 16:9 */
+            background: #111;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid var(--gold-color);
+            margin-bottom: 20px;
+        }
+        video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .btn {
+            display: inline-block;
+            background-color: var(--gold-color);
+            color: #000000;
+            padding: 12px 25px;
+            font-size: 1rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: opacity 0.2s;
+            cursor: pointer;
+            border: none;
+            text-transform: uppercase;
+        }
+        .btn:hover {
+            opacity: 0.85;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Transmissão Exclusiva</h1>
+    
+    <div class="video-wrapper">
+        <!-- Substitua o link abaixo pela URL direta do seu vídeo em formato .mp4 -->
+        <video controls autoplay muted playsinline poster="https://raw.githubusercontent.com/pradodalapa-hue/fotos-industrial/main/img/jdp_1790472078751_1001572650.jpg">
+            <source src="https://raw.githubusercontent.com/pradodalapa-hue/fotos-industrial/main/media/jdp_1790805480352_2026-02-12T20-55-09_a_quero_que_você_watermarked(1).mp4" type="video/mp4">
+            Seu navegador não suporta a reprodução de vídeo.
+        </video>
+    </div>
+
+    <p style="font-size: 0.85rem; color: #aaa; margin-bottom: 15px;">Assista ao conteúdo completo acima ou acesse o link oficial.</p>
+    
+    <a href="https://www.google.com" class="btn" target="_blank">Acessar Página Oficial</a>
+</div>
+
+</body>
+</html>
